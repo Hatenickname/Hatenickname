@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  nginx_smartway:
+    build: nginx/
+    ports:
+       - 80:80
+    volumes:
+      - ./nginx/nginx_test.conf:/etc/nginx/nginx.conf
+
+  mongodb_smartway:
+    build: mongo/
+    ports:
+        - 27017:27017

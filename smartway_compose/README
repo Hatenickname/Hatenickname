@@ -1,0 +1,3 @@
+to start use "sh smartway_test_run"
+
+to check use proxy_pass "curl"
